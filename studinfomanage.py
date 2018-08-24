@@ -1,0 +1,112 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'StudentInfo.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(587, 468)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.centralwidget)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.formLayout = QtWidgets.QFormLayout()
+        self.formLayout.setObjectName("formLayout")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setObjectName("label")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label)
+        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit.setObjectName("lineEdit")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit)
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setObjectName("label_2")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_2)
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit_2)
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setObjectName("label_4")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_4)
+        self.comboBox = QtWidgets.QComboBox(self.centralwidget)
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.comboBox)
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setObjectName("label_3")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_3)
+        self.comboBox_2 = QtWidgets.QComboBox(self.centralwidget)
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.comboBox_2)
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setObjectName("label_5")
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.label_5)
+        self.lineEdit_3 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.lineEdit_3)
+        self.horizontalLayout.addLayout(self.formLayout)
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setObjectName("pushButton")
+        self.horizontalLayout.addWidget(self.pushButton)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 587, 20))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "Name"))
+        self.label_2.setText(_translate("MainWindow", "Age"))
+        self.label_4.setText(_translate("MainWindow", "Branch"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "CSE"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "ECE"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "EEE"))
+        self.comboBox.setItemText(3, _translate("MainWindow", "MECH"))
+        self.comboBox.setItemText(4, _translate("MainWindow", "IT"))
+        self.label_3.setText(_translate("MainWindow", "Year-Sem"))
+        self.comboBox_2.setItemText(0, _translate("MainWindow", "1-1"))
+        self.comboBox_2.setItemText(1, _translate("MainWindow", "1-2"))
+        self.comboBox_2.setItemText(2, _translate("MainWindow", "2-1"))
+        self.comboBox_2.setItemText(3, _translate("MainWindow", "2-2"))
+        self.comboBox_2.setItemText(4, _translate("MainWindow", "3-1"))
+        self.comboBox_2.setItemText(5, _translate("MainWindow", "3-2"))
+        self.comboBox_2.setItemText(6, _translate("MainWindow", "4-1"))
+        self.comboBox_2.setItemText(7, _translate("MainWindow", "4-2"))
+        self.label_5.setText(_translate("MainWindow", "Score %"))
+        self.pushButton.setText(_translate("MainWindow", "Submit"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
